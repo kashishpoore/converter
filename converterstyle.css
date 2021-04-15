@@ -1,0 +1,37 @@
+
+#button1:hover{
+  background-color: #3b6e46 ;
+
+
+}
+#button2:hover{
+  background-color: #3b6e46 ;
+
+}
+#button3:hover{
+  background-color: #3b6e46 ;
+
+}
+
+#button1{
+    font-family: 'Architects Daughter', cursive;
+}
+#button2{
+    font-family: 'Architects Daughter', cursive;
+}
+#button3{
+    font-family: 'Architects Daughter', cursive;
+}
+
+
+body{
+  padding: 220px;
+  background-color: #58635c;
+  font-family: 'Architects Daughter', cursive;
+  color: white;
+}
+
+h1{
+  font-size: 50px;
+  font-family: 'Architects Daughter', cursive;
+}

@@ -1,0 +1,68 @@
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+  <link rel = "stylesheet" href = "converterstyle.css">
+  <script>
+  function furlongstomiles()
+  {
+    var start = document.getElementById("start").value;
+    var end = document.getElementById("end").value;
+    var res = 0;
+    var num = "Furlongs Miles <br>";
+    start = parseInt(start);
+    end = parseInt(end);
+
+    for(var i = start; i <= end; i++)
+        {
+          res = i * 8;
+          num = num + i + " ---------------> " + res + "<br>";
+        }
+    document.getElementById("res1").innerHTML = num;
+  }
+  function slugstopounds()
+  {
+    var start = document.getElementById("start").value;
+    var end = document.getElementById("end").value;
+    var res = 0;
+    var num = "Slugs        Pounds<br>";
+    start = parseInt(start);
+    end = parseInt(end);
+
+    for(var i = start; i <= end; i++)
+        {
+          res = i * 32.174;
+          num = num + i + " ------- " + res + "<br>";
+        }
+    document.getElementById("res1").innerHTML = num;
+  }
+  function fortnightstodays()
+  {
+    var start = document.getElementById("start").value;
+    var end = document.getElementById("end").value;
+    var res = 0;
+    var num = "Fortnights        Days <br>";
+    start = parseInt(start);
+    end = parseInt(end);
+
+    for(var i = start; i <= end; i++)
+        {
+          res = i * 14;
+          num = num + i + " ----------->  " + res + "<br>";
+        }
+    document.getElementById("res1").innerHTML = num;
+  }
+  </script>
+</head>
+
+<body>
+  <center><h1>Unit Converter for the Old Ages </h1>
+  <input type = "text" placeholder = "Start Number" p id = "start">
+  <input type = "text" placeholder = "End Number" p id = "end"> <br> <br>
+  <input type = "button" value = "Furlongs to Miles" onclick = "furlongstomiles()" p id = "button1">
+  <input type = "button" value = "Slugs to Pounds" onclick = "slugstopounds()"p id = "button2">
+  <input type = "button" value = "Fortnights to Days" onclick = "fortnightstodays()" p id = "button3"> <br> <br><hr> <hr></center>
+  <center><td><p id = "res1"></p></td></center>
+</body>
+
+</html>
